@@ -1,0 +1,172 @@
+Okayy so first doubt is 
+changing icon?
+
+Hold control and click to go to the svg
+
+icons in adnroid apps are in svg format 
+
+.xml
+
+
+Now you will find all these drawables in 
+
+res > drawables folder
+
+You can convert your png to svg 
+
+using any online tools
+
+We can use .png too because converting it into svg measn
+
+we want all the layers of vector present (Its a graphic designer job so lets just jump to the point)
+
+How to change icon
+
+
+You can change target api /sdk from module settings
+
+now our settings are changed 
+
+but we made it on api level 33 so it will show compatiblity errors
+
+
+      :app is currently compiled against android-27.
+
+      Recommended action: Update this project to use a newer compileSdkVersion
+      of at least 31, for example 33.
+
+
+So it supports atleast api level 31 and up (our code and app structure)
+
+In manifest target api is 31 it means we cant use less than 31 and our app is now setup on api level 33
+
+
+If you were looking for api level 34, I dont know if its in new releases I am using 6 months old version
+of android studio. you might have new api level option go try by yourself
+
+
+First of all you asked for app id
+
+its our package name
+
+we can check it in our build.gradle file 
+
+
+
+
+
+
+
+
+        applicationId "com.example.moneyapp" This is our appID we can change it while exporting
+
+
+In build.gradle we have versions too
+
+
+        versionCode 1
+        versionName "1.0"
+
+
+Version code is like when you want your app to have versions like 1.1 or 1.01 or anything
+
+it depeends on you
+
+but whenever you update code ( before deployement)
+
+you need to mention the version (change the version)
+
+The version code
+
+lets suppose we made changes in this app for 6th time
+
+we need to change version code to 6 if we want to promt users
+
+
+thats all about app id and versions but
+its your app id right?:
+
+        applicationId "com.example.moneyapp"
+
+
+you cant change "com"
+
+you have to put com.packagename.modulename
+
+so you can put any names after com 
+
+com.aakash.thatapp 
+
+Its just a string it doesnt have to do anything with 
+development process so once we get on to uploading apps on google play store 
+you will now the conflicts of app id
+
+i can create 2 different apps with same app in locally but
+cant put them on google play store 
+thats all about app ids
+
+wait
+
+its Unit error let me check why its happening
+
+
+Can we fix this error later, its giving me unit errors i will tell you why it happened
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
